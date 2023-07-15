@@ -56,7 +56,7 @@ Window {
 
                 for (var i = 0; i < modelRoute.count; ++i) {
                     var coord = modelRoute.get(i);
-                    var point = map.fromCoordinate(QtPositioning.coordinate(coord.latitude, coord.longitude));
+                    var point = map.fromCoordinate(QtPositioning.coordinate(coord.latitude, coord.longitude), false);
 
                     if (i === 0) {
                         ctx.moveTo(point.x, point.y);
